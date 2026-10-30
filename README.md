@@ -20,8 +20,8 @@ Dépôt cible : https://github.com/mickaelmoh/video-webpage-html
 
 1. Publier ces fichiers à la racine de la branche `main`.
 2. Dans Settings → Pages, choisir « Deploy from a branch », puis `main` et `/ (root)`.
-3. Dans « Custom domain », saisir `how-to.merveil-paris.com` et enregistrer AVANT de modifier le DNS OVH.
-4. Dans OVH → domaine `merveil-paris.com` → Zone DNS, ajouter l’entrée suivante après vérification des éventuelles entrées existantes pour ce seul sous-domaine :
+3. Dans « Custom domain », saisir `how-to.merveil-paris.com` et enregistrer AVANT de modifier le DNS actif.
+4. Dans Cloudflare → domaine `merveil-paris.com` → DNS, ajouter l’entrée suivante en mode DNS only après vérification des éventuelles entrées existantes pour ce seul sous-domaine :
 
 | Type | Sous-domaine | Cible |
 | --- | --- | --- |
@@ -31,6 +31,8 @@ La cible ne comporte ni `https://`, ni chemin, ni nom du dépôt. Préserver les
 
 5. Attendre la validation DNS et la disponibilité du certificat, puis activer « Enforce HTTPS » dans GitHub Pages.
 6. Vérifier https://how-to.merveil-paris.com et un lien direct de vidéo.
+
+Constat du 30 octobre 2026 dans OVH : les serveurs DNS actifs sont `john.ns.cloudflare.com` et `pearl.ns.cloudflare.com`. La zone DNS OVH affichée est inactive ; ne pas y ajouter cette entrée et ne pas changer les serveurs de noms.
 
 Cette configuration conserve le sous-domaine Merveil dans la barre d’adresse. Aucun service de redirection OVH payant n’est nécessaire. La propagation DNS et la mise à disposition HTTPS peuvent prendre jusqu’à 24 heures.
 
