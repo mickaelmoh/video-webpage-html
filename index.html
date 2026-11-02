@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="theme-color" content="#233f37">
-<meta name="description" content="Les vidéos utiles aux équipes Merveil : choisissez un équipement pour apprendre à l’utiliser ou résoudre un problème.">
+<meta name="description" content="Les vidéos Merveil pour utiliser les équipements et résoudre un problème. Tutoriels clients et gestes pour les équipes.">
 <title>Merveil · Aide aux équipements</title>
 <style>
 :root{--paper:#f7f7f2;--ink:#233f37;--muted:#57675f;--line:#d7dfd6;--soft:#eaf0e7;--white:#fff;--orange:#8d4521}
@@ -18,196 +18,268 @@
 footer{max-width:1050px;margin:40px auto 0;padding:20px 28px 30px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}footer p{margin:4px 0}
 .bottom-nav{display:none}.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);width:max-content;max-width:90vw;background:var(--ink);color:white;padding:13px 18px;border-radius:10px;z-index:40}
 dialog{padding:0;border:0;border-radius:16px;width:min(900px,94vw);max-height:94dvh;overflow:auto;color:var(--ink);background:var(--paper);box-shadow:0 20px 80px #0005}dialog::backdrop{background:#10261fdb}.dialog-top{display:flex;justify-content:space-between;align-items:start;padding:20px;gap:14px}.dialog-top h2{font-size:22px;line-height:1.3;margin:0 0 8px}.dialog-top p{font-size:14px;color:var(--muted);margin:0}.close{border:1px solid var(--line);background:white;border-radius:50%;font-size:27px;width:48px;height:48px;flex-shrink:0}.player{aspect-ratio:16/9;background:#12271e}.player iframe{width:100%;height:100%;border:0;display:block}.dialog-bottom{padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}.dialog-bottom a{padding:10px 0;font-size:15px}.dialog-bottom span{font-size:13px;color:var(--muted)}.fallback{padding:20px}
-@media(max-width:760px){.header{padding:14px 18px}.brand{font-size:28px}.team-label{font-size:12px}.wrap{padding:0 16px}.intro{padding:23px 0 12px}.intro h1{font-size:30px;max-width:330px}.intro p{font-size:16px;max-width:360px}.search-area{padding-top:8px}.families{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.family{padding:15px;min-height:154px;gap:6px}.family strong{font-size:17px}.family small{font-size:12px}.family .count{font-size:12px}.icon{width:38px;height:38px;border-radius:10px}.icon svg{width:25px;height:25px}.section-title{font-size:20px;margin-top:15px}.equipment-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:18px}.equipment-button{font-size:15px;min-height:60px}.browse-head{align-items:center;flex-direction:row}.browsing .intro{display:none}.browse-head h2{font-size:21px}.browse-head h2{font-size:25px}.selection{margin:20px 0 10px}.selection h3{font-size:20px}.selection .text-button{font-size:14px}.kinds{gap:3px}.kind{font-size:14px;padding:9px 4px}.videos{grid-template-columns:1fr;gap:18px}.card h3{font-size:19px}.card-body{padding:17px}.poster{aspect-ratio:16/8}.play{font-size:15px}.bottom-nav{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;bottom:0;left:0;right:0;background:#fffffff5;backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:5px 8px calc(5px + env(safe-area-inset-bottom));z-index:20}.bottom-nav button{border:0;background:none;min-height:56px;font-size:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border-radius:9px}.bottom-nav button.active{background:var(--soft);font-weight:650}.bottom-nav svg{width:23px;height:23px}footer{padding:20px 16px 100px;margin-top:25px}.toast{bottom:90px}.dialog-top{padding:16px}.dialog-top h2{font-size:20px}.dialog-bottom{display:block;padding:16px}.dialog-bottom span{display:block;margin-top:4px}dialog{width:calc(100vw - 20px);max-height:94dvh}.close{width:46px;height:46px}.hint{font-size:14px}.all-button{margin:18px 0}.search-bar input{font-size:16px}}
+@media(max-width:760px){.header{padding:14px 18px}.brand{font-size:28px}.team-label{font-size:12px}.wrap{padding:0 16px}.intro{padding:23px 0 12px}.intro h1{font-size:30px;max-width:330px}.intro p{font-size:16px;max-width:360px}.search-area{padding-top:8px}.families{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.family{padding:15px;min-height:154px;gap:6px}.family strong{font-size:17px}.family small{font-size:12px}.family .count{font-size:12px}.icon{width:38px;height:38px;border-radius:10px}.icon svg{width:25px;height:25px}.section-title{font-size:20px;margin-top:15px}.equipment-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:18px}.equipment-button{font-size:15px;min-height:60px}.browse-head{align-items:center;flex-direction:row}.browsing .intro{display:none}.browse-head h2{font-size:21px}.browse-head h2{font-size:25px}.selection{margin:20px 0 10px}.selection h3{font-size:20px}.selection .text-button{font-size:14px}.kinds{gap:3px}.kind{font-size:14px;padding:9px 4px}.videos{grid-template-columns:1fr;gap:18px}.card h3{font-size:19px}.card-body{padding:17px}.poster{aspect-ratio:16/8}.play{font-size:15px}.bottom-nav{display:grid;grid-template-columns:repeat(2,1fr);position:fixed;bottom:0;left:0;right:0;background:#fffffff5;backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:5px 8px calc(5px + env(safe-area-inset-bottom));z-index:20}.bottom-nav button{border:0;background:none;min-height:56px;font-size:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border-radius:9px}.bottom-nav button.active{background:var(--soft);font-weight:650}.bottom-nav svg{width:23px;height:23px}footer{padding:20px 16px 100px;margin-top:25px}.toast{bottom:90px}.dialog-top{padding:16px}.dialog-top h2{font-size:20px}.dialog-bottom{display:block;padding:16px}.dialog-bottom span{display:block;margin-top:4px}dialog{width:calc(100vw - 20px);max-height:94dvh}.close{width:46px;height:46px}.hint{font-size:14px}.all-button{margin:18px 0}.search-bar input{font-size:16px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Home: video first, compact filters, explicit audiences. */
+.eyebrow{font-size:10px!important;font-weight:750;letter-spacing:.15em;color:var(--muted);margin:0 0 8px!important}.intro{padding:28px 0 16px}.intro h1{font-size:40px}.intro>p:last-child{font-size:16px}.search-area{padding-top:4px}.audience-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:10px 0 18px}.audience-row p{font-size:13px;color:var(--muted);margin:0}.audience-switch,.need-switch{display:inline-flex;background:#e9eee6;padding:4px;border-radius:11px;gap:3px}.audience-switch button,.need-switch button{border:0;background:transparent;min-height:44px;padding:8px 17px;border-radius:8px;font-size:14px}.audience-switch button.active{background:var(--ink);color:white;font-weight:650}.need-switch button.active{background:white;box-shadow:0 1px 5px #233f3715;font-weight:650}.category-chips{display:flex;flex-wrap:wrap;gap:7px}.category-chip{display:flex;align-items:center;gap:7px;border:1px solid var(--line);background:white;border-radius:24px;min-height:44px;padding:8px 13px;font-size:13px}.category-chip svg{width:17px;height:17px}.category-chip.active{background:var(--soft);border-color:var(--ink);font-weight:650}.filter-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:15px 0 22px}.reset-filters{background:none;border:0;text-decoration:underline;min-height:44px;font-size:13px;color:var(--muted)}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:24px 0 0}.section-heading h2{font:29px/1.2 Georgia,serif;margin:0 0 8px}.section-heading .hint{margin:0;font-size:14px}.section-heading .text-button{flex-shrink:0;font-size:13px}.results{margin:12px 0 16px}.videos{gap:18px}.card{transition:box-shadow .15s,border-color .15s}.card:hover{border-color:#8da391;box-shadow:0 6px 20px #233f3710}.poster{aspect-ratio:16/9}.poster img{transition:transform .2s}.video-main:hover img{transform:scale(1.025)}.play{width:38px;height:38px;padding:0;justify-content:center;border-radius:50%;left:14px;bottom:14px}.play svg{width:14px;height:14px}.card-body{padding:15px 16px 10px}.card h3{font-size:18px;line-height:1.3;margin:8px 0}.card .model{font-size:13px;margin:0 0 8px;color:var(--ink);font-weight:550}.video-action{font-size:14px;line-height:1.45;color:var(--muted);margin:0}.badge-row{display:flex;gap:5px;align-items:center;flex-wrap:wrap}.badge{font-size:10px;font-weight:650;margin:0;padding:3px 7px;border-radius:4px}.badge.standard{background:#f4edda;color:#6c511c}.badge.client{background:#e7f0eb;color:#28553f}.badge.internal{background:#eeebf7;color:#57457f}.card-footer{justify-content:space-between;align-items:center;padding:3px 16px 8px;gap:8px}.kind-label{font-size:11px;color:var(--muted)}.share{font-size:12px;text-align:right;padding-left:0}.standard-card{border-top:3px solid #b79a57}.model-note{font-size:12px;color:var(--muted);margin:5px 0 0}#other-section{border-top:1px solid var(--line);margin-top:36px;padding-top:6px}#other-grid{margin-top:20px}.dialog-audience{display:inline-block;margin-right:8px;font-weight:650}.dialog-top p{line-height:1.6}.bottom-nav button.active{color:var(--ink)}
+@media(max-width:760px){.intro{padding:19px 0 10px}.intro h1{font-size:31px;max-width:none}.intro .eyebrow{display:none}.intro>p:last-child{font-size:14px}.audience-row{gap:6px;margin:8px 0 13px}.audience-switch{width:100%}.audience-switch button{flex:1;padding:8px 10px}.audience-row p{font-size:12px}.category-chips{gap:6px}.category-chip{font-size:12px;min-height:40px;padding:6px 10px}.category-chip svg{display:none}.filter-row{margin:12px 0 17px}.need-switch button{font-size:13px;padding:7px 12px}.section-heading{align-items:start;gap:10px;margin-top:18px}.section-heading h2{font-size:25px}.section-heading .hint{font-size:13px}.section-heading .text-button{max-width:116px;min-height:44px;font-size:12px;padding:8px;line-height:1.35}.section-heading .eyebrow{font-size:9px!important}.videos{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card-body{padding:11px 10px 6px}.card h3{font-size:15px}.card .model{font-size:12px}.video-action{font-size:12px}.badge{font-size:9px;padding:3px 5px}.card-footer{padding:0 10px 6px;flex-wrap:wrap;gap:0}.share{min-height:44px;font-size:11px;text-align:left}.kind-label{font-size:10px}.play{width:31px;height:31px;left:8px;bottom:8px}.play svg{width:12px;height:12px}.results{font-size:12px}.search-bar input{font-size:14px}.search-bar{min-height:50px}.search-bar input{padding:13px 0}.header{padding:12px 16px}.brand{font-size:26px}.team-label{font-size:11px}.reset-filters{font-size:12px;padding:4px}.dialog-top h2{font-size:20px}#other-section{margin-top:28px}}
+@media(max-width:370px){.videos{grid-template-columns:1fr}.card h3{font-size:18px}.video-action{font-size:14px}.badge{font-size:11px}.card-body{padding:15px}.card-footer{padding:0 15px 8px}.share{font-size:12px}.kind-label{font-size:12px}}
+
+
+/* Keep the first video row in view on small screens. */
+.header{padding-top:12px;padding-bottom:12px}.intro{padding:17px 0 10px}.intro h1{font-size:35px;margin-bottom:5px}.intro .eyebrow{display:none}.search-bar{min-height:50px}.search-bar input{padding:12px 0}.search-area{padding-bottom:6px}.audience-row{margin:6px 0 12px}.category-chips{gap:6px}.filter-row{margin:10px 0 16px}.section-heading{margin-top:17px}.section-heading .eyebrow{display:none}.section-heading h2{font-size:27px;margin-bottom:5px}.section-heading .hint{font-size:13px}.results{margin:8px 0 12px}
+@media(max-width:760px){.header{padding:9px 16px}.intro{padding:13px 0 8px}.intro h1{font-size:28px;margin:0}.intro>p:last-child{display:none}.search-area{padding-top:2px;padding-bottom:4px}.search-bar{min-height:46px}.search-bar input{padding:11px 0}.audience-row{margin:5px 0 10px;gap:3px}.audience-switch button{min-height:42px}.category-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;padding-bottom:5px}.category-chip{flex-shrink:0;white-space:nowrap;min-height:40px}.filter-row{margin:7px 0 12px}.need-switch button{min-height:40px}.section-heading{margin-top:12px;align-items:center;gap:8px}.section-heading h2{font-size:22px;margin:0;line-height:1.2}.section-heading .hint{display:none}.section-heading .text-button{max-width:90px;font-size:11px;padding:6px;min-height:40px}.results{font-size:11px;margin:8px 0 12px}.section-heading .eyebrow{display:none!important}.card .model{line-height:1.4}.section-heading h2{scroll-margin-top:75px}}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#content">Aller au contenu</a>
-<header class="header"><a href="./" class="brand" aria-label="Merveil, accueil">merveil</a><span class="team-label">Le guide des équipes</span></header>
+<header class="header"><a href="./" class="brand" data-home aria-label="Merveil, accueil">merveil</a><span class="team-label">Le guide des équipements</span></header>
 <main class="wrap" id="content">
-<section class="intro"><h1>Une vidéo pour vous aider</h1><p>Choisissez l’équipement. Regardez les bons gestes.</p></section>
-<div class="search-area"><form class="search-bar" role="search" id="search-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Ex. : lave-linge, wifi, cadenas…" aria-label="Rechercher dans toutes les vidéos" autocomplete="off"><button type="button" id="clear-search" hidden>Effacer</button></form></div>
-<section id="home" aria-labelledby="home-title"><h2 class="section-title" id="home-title">Quel équipement ?</h2><p class="hint">Choisissez une catégorie pour commencer.</p><div class="families" id="families"></div></section>
-<section id="browse" hidden aria-labelledby="browse-title">
-<div class="browse-head"><button class="back" data-home>← Catégories</button><h2 id="browse-title" tabindex="-1"></h2></div>
-<div id="equipment-section"><p class="hint">Choisissez votre équipement ou consultez toute la catégorie.</p><div class="equipment-grid" id="equipments" role="group" aria-label="Choisir un équipement"></div></div>
-<div class="selection"><div><h3 id="selection-title"></h3><p id="selection-note"></p></div><button class="text-button" id="change-equipment" hidden>Changer</button></div>
-<div class="kinds" role="group" aria-label="Quel est votre besoin ?"><button class="kind active" data-kind="" aria-pressed="true">Tout voir<small></small></button><button class="kind" data-kind="Utilisation" aria-pressed="false">Comment l’utiliser<small></small></button><button class="kind" data-kind="Dépannage" aria-pressed="false">Un problème ?<small></small></button></div>
-<p class="results" id="results" role="status" aria-live="polite"></p>
-<div class="videos" id="grid"></div><div class="empty" id="empty" hidden><h3>Aucune vidéo trouvée</h3><p>Essayez un mot simple : « wifi », « frigo » ou « radiateur ».</p><button class="text-button" data-all>Voir toutes les vidéos</button></div>
-</section>
+<section class="intro"><p class="eyebrow">LE GUIDE MERVEIL</p><h1>L’aide aux équipements</h1><p>Le bon modèle. Les bons gestes.</p></section>
+<div class="search-area"><form class="search-bar" role="search" id="search-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Un équipement, une marque, un problème…" aria-label="Rechercher une vidéo" autocomplete="off"><button type="button" id="clear-search" hidden>Effacer</button></form></div>
+<div class="audience-row"><div class="audience-switch" role="group" aria-label="À qui s’adresse la vidéo ?"><button data-audience="client" aria-pressed="false">Pour le client</button><button data-audience="internal" aria-pressed="true" class="active">Interne</button></div><p id="audience-note">Uniquement les vidéos internes.</p></div>
+<nav class="category-nav" aria-label="Filtrer par catégorie"><div id="families" class="category-chips"></div></nav>
+<div class="filter-row"><div class="need-switch" role="group" aria-label="Quel est votre besoin ?"><button data-kind="Utilisation" aria-pressed="false">Utilisation</button><button data-kind="Dépannage" aria-pressed="false">Dépannage</button></div><button class="reset-filters" id="reset-filters" hidden>Effacer les filtres</button></div>
+<section aria-labelledby="section-title"><div class="section-heading"><div><p class="eyebrow" id="section-eyebrow">LA SÉLECTION MERVEIL</p><h2 id="section-title" tabindex="-1">Les standards Merveil</h2><p class="hint" id="section-hint">Les vidéos des modèles retenus pour nos appartements.</p></div></div><p class="results" id="results" role="status" aria-live="polite"></p><div class="videos" id="grid"></div><div class="empty" id="empty" hidden><h3>Aucune vidéo pour cette sélection</h3><p>Essaie un autre équipement ou efface les filtres.</p><button class="text-button" data-reset>Effacer les filtres</button></div></section>
+<section id="other-section" aria-labelledby="other-title"><div class="section-heading"><div><p class="eyebrow">POUR ALLER PLUS LOIN</p><h2 id="other-title">Autres modèles et gestes utiles</h2><p class="hint">D’autres équipements et les conseils communs à plusieurs modèles.</p></div></div><div class="videos" id="other-grid"></div></section>
 <noscript><p>Activez JavaScript pour consulter les vidéos.</p></noscript>
 </main>
-<footer><p>Merveil Paris · L’aide aux équipements</p><p>53 vidéos · Catalogue mis à jour le 30/10/2026</p></footer>
-<nav class="bottom-nav" aria-label="Navigation principale"><button data-home id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Catégories</button><button id="nav-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>Recherche</button><button data-all id="nav-all"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m10 8 6 4-6 4Z"/></svg>Toutes les vidéos</button></nav>
+<footer><p>Merveil Paris · L’aide aux équipements</p><p id="catalog-date">Catalogue mis à jour le 2 novembre 2026</p></footer>
+<nav class="bottom-nav" aria-label="Navigation principale"><button data-home id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Accueil</button><button id="nav-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>Recherche</button></nav>
 <dialog id="video-dialog" aria-labelledby="video-title"><div class="dialog-top"><div><h2 id="video-title"></h2><p id="video-detail"></p></div><button class="close" id="close-dialog" aria-label="Fermer la vidéo">×</button></div><div class="player" id="player"></div><div class="dialog-bottom"><a id="youtube-link" target="_blank" rel="noopener noreferrer">Ouvrir sur YouTube ↗</a><span>La vidéo ne démarre pas ? Utilisez le lien YouTube.</span></div></dialog>
 <div class="toast" id="toast" role="status" hidden></div>
 <script id="video-data" type="application/json">{
-  "updated": "2026-10-30",
+  "updated": "2026-11-02",
   "videos": [
     {
       "id": 1,
       "title": "Réfrigérateur : tutoriel d'utilisation (modèle A)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/8nCU5EjGWpc",
       "youtubeId": "8nCU5EjGWpc",
+      "language": "",
+      "is_active": true,
       "equipment": "Réfrigérateur",
       "family": "Électroménager",
       "models": [
         "Réfrigérateur — (générique)"
       ],
-      "language": ""
+      "standardModels": [
+        "Réfrigérateur — (générique)"
+      ],
+      "isStandard": true
     },
     {
       "id": 2,
       "title": "Lave-linge Beko : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/WMiwgC6OCWE",
       "youtubeId": "WMiwgC6OCWE",
+      "language": "",
+      "is_active": true,
       "equipment": "Lave-linge-sechant",
       "family": "Électroménager",
       "models": [
         "Lave-linge-sechant — Beko Lave-linge"
       ],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 3,
       "title": "Lave-linge séchant Indesit : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/XnUzQMd_6Ww",
       "youtubeId": "XnUzQMd_6Ww",
+      "language": "",
+      "is_active": true,
       "equipment": "Lave-linge-sechant",
       "family": "Électroménager",
       "models": [
         "Lave-linge-sechant — Indesit Lave-linge séchant"
       ],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 4,
       "title": "Lave-linge séchant Siemens : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/QNmqIRhggR0",
       "youtubeId": "QNmqIRhggR0",
+      "language": "",
+      "is_active": true,
       "equipment": "Lave-linge-sechant",
       "family": "Électroménager",
       "models": [
         "Lave-linge-sechant — Siemens Lave-linge séchant"
       ],
-      "language": ""
+      "standardModels": [
+        "Lave-linge-sechant — Siemens Lave-linge séchant"
+      ],
+      "isStandard": true
     },
     {
       "id": 5,
       "title": "Lave-vaisselle : tutoriel d'utilisation (modèle A)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/_6iqD18TrR8",
       "youtubeId": "_6iqD18TrR8",
+      "language": "",
+      "is_active": true,
       "equipment": "Lave-vaisselle",
       "family": "Électroménager",
       "models": [
         "Lave-vaisselle — (générique)"
       ],
-      "language": ""
+      "standardModels": [
+        "Lave-vaisselle — (générique)"
+      ],
+      "isStandard": true
     },
     {
       "id": 7,
       "title": "Four micro-ondes multifonction Siemens : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/sK1JkBe2DeE",
       "youtubeId": "sK1JkBe2DeE",
+      "language": "",
+      "is_active": true,
       "equipment": "Four micro-ondes",
       "family": "Électroménager",
       "models": [
         "Four micro-ondes — Siemens"
       ],
-      "language": ""
+      "standardModels": [
+        "Four micro-ondes — Siemens"
+      ],
+      "isStandard": true
     },
     {
       "id": 10,
       "title": "Plaque de cuisson Siemens : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/4PRIc7rI-eA",
       "youtubeId": "4PRIc7rI-eA",
+      "language": "",
+      "is_active": true,
       "equipment": "Plaque de cuisson",
       "family": "Électroménager",
       "models": [
         "Plaque de cuisson — Siemens"
       ],
-      "language": ""
+      "standardModels": [
+        "Plaque de cuisson — Siemens"
+      ],
+      "isStandard": true
     },
     {
       "id": 11,
       "title": "Radiateur mural : tutoriel d'utilisation (modèle A)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/qlyEX_RKmuU",
       "youtubeId": "qlyEX_RKmuU",
+      "language": "",
+      "is_active": true,
       "equipment": "Radiateur",
       "family": "Chauffage & climatisation",
       "models": [
         "Radiateur — Thermor"
       ],
-      "language": ""
+      "standardModels": [
+        "Radiateur — Thermor"
+      ],
+      "isStandard": true
     },
     {
       "id": 12,
       "title": "Radiateur mural : tutoriel d'utilisation (modèle B)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/nzUM3Fz0jJ8",
       "youtubeId": "nzUM3Fz0jJ8",
+      "language": "",
+      "is_active": true,
       "equipment": "Radiateur",
       "family": "Chauffage & climatisation",
       "models": [
         "Radiateur — (générique)"
       ],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 13,
       "title": "Sèche-serviettes : tutoriel d'utilisation (modèle A)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtube.com/shorts/2pkY9GRBMaM",
       "youtubeId": "2pkY9GRBMaM",
+      "language": "",
+      "is_active": true,
       "equipment": "Sèche-serviettes",
       "family": "Sanitaire",
       "models": [
         "Sèche-serviettes — Thermor"
       ],
-      "language": ""
+      "standardModels": [
+        "Sèche-serviettes — Thermor"
+      ],
+      "isStandard": true
     },
     {
       "id": 14,
       "title": "Sèche-serviettes : tutoriel d'utilisation (modèle B)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/a3Mf8l2RpOE",
       "youtubeId": "a3Mf8l2RpOE",
+      "language": "",
+      "is_active": true,
       "equipment": "Sèche-serviettes",
       "family": "Sanitaire",
       "models": [
         "Sèche-serviettes — (générique)"
       ],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 15,
       "title": "Télévision : tutoriel d'utilisation (modèle alternatif)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/f-qZ3m12H7U",
       "youtubeId": "f-qZ3m12H7U",
+      "language": "",
+      "is_active": true,
       "equipment": "Télévision",
       "family": "Multimédia",
       "models": [
         "Télévision — (générique)"
       ],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 16,
       "title": "TV Samsung : explication de la smart TV",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/ZYTo_CdQT8k",
       "youtubeId": "ZYTo_CdQT8k",
+      "language": "",
+      "is_active": true,
       "equipment": "Télévision",
       "family": "Multimédia",
       "models": [
@@ -215,220 +287,306 @@ dialog{padding:0;border:0;border-radius:16px;width:min(900px,94vw);max-height:94
         "Télévision — Samsung Smart TV Connectée",
         "Télévision — Samsung Smart TV Connectée"
       ],
-      "language": ""
+      "standardModels": [
+        "Télévision — Samsung Smart TV Connectée"
+      ],
+      "isStandard": true
     },
     {
       "id": 17,
       "title": "Climatisation Daikin : fonctionnalités",
       "kind": "Utilisation",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/LMTmYC1QnPY",
       "youtubeId": "LMTmYC1QnPY",
+      "language": "",
+      "is_active": true,
       "equipment": "Climatisation gainable",
       "family": "Chauffage & climatisation",
       "models": [
         "Climatisation gainable — Daikin Réversible chaud/froid"
       ],
-      "language": ""
+      "standardModels": [
+        "Climatisation gainable — Daikin Réversible chaud/froid"
+      ],
+      "isStandard": true
     },
     {
       "id": 18,
       "title": "Climatisation Daikin : ne fonctionne pas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/KWBF5FUOYQ0",
       "youtubeId": "KWBF5FUOYQ0",
+      "language": "",
+      "is_active": true,
       "equipment": "Climatisation gainable",
       "family": "Chauffage & climatisation",
       "models": [
         "Climatisation gainable — Daikin Réversible chaud/froid"
       ],
-      "language": ""
+      "standardModels": [
+        "Climatisation gainable — Daikin Réversible chaud/froid"
+      ],
+      "isStandard": true
     },
     {
       "id": 21,
       "title": "Radiateur mural : ne fonctionne pas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/8FrhZmBQmco",
       "youtubeId": "8FrhZmBQmco",
+      "language": "",
+      "is_active": true,
       "equipment": "Radiateur",
       "family": "Chauffage & climatisation",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 22,
       "title": "Radiateur mural : logo cadenas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/N1EVyY1-9UE",
       "youtubeId": "N1EVyY1-9UE",
+      "language": "",
+      "is_active": true,
       "equipment": "Radiateur",
       "family": "Chauffage & climatisation",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 23,
       "title": "Radiateur mural : mode et programme",
       "kind": "Utilisation",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/jabOs0WpjN4",
       "youtubeId": "jabOs0WpjN4",
+      "language": "",
+      "is_active": true,
       "equipment": "Radiateur",
       "family": "Chauffage & climatisation",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 25,
       "title": "Sèche-serviettes : ne fonctionne pas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/XSk_55iwtNg",
       "youtubeId": "XSk_55iwtNg",
+      "language": "",
+      "is_active": true,
       "equipment": "Sèche-serviettes",
       "family": "Sanitaire",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 26,
       "title": "Sèche-serviettes : explication mode et programme",
       "kind": "Utilisation",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/LNtiCNriGB0",
       "youtubeId": "LNtiCNriGB0",
+      "language": "",
+      "is_active": true,
       "equipment": "Sèche-serviettes",
       "family": "Sanitaire",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 27,
       "title": "Sèche-serviettes : logo cadenas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/iQn7_F3BFbM",
       "youtubeId": "iQn7_F3BFbM",
+      "language": "",
+      "is_active": true,
       "equipment": "Sèche-serviettes",
       "family": "Sanitaire",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 29,
       "title": "Lave-linge Siemens : ne fonctionne pas, que faire ? (code erreur)",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/gIvCYgLIfa8",
       "youtubeId": "gIvCYgLIfa8",
+      "language": "",
+      "is_active": true,
       "equipment": "Lave-linge-sechant",
       "family": "Électroménager",
       "models": [
         "Lave-linge-sechant — Siemens Lave-linge séchant"
       ],
-      "language": ""
+      "standardModels": [
+        "Lave-linge-sechant — Siemens Lave-linge séchant"
+      ],
+      "isStandard": true
     },
     {
       "id": 30,
       "title": "Lave-linge Siemens : logo bassin affiché, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/YN3JyXj3utE",
       "youtubeId": "YN3JyXj3utE",
+      "language": "",
+      "is_active": true,
       "equipment": "Lave-linge-sechant",
       "family": "Électroménager",
       "models": [
         "Lave-linge-sechant — Siemens Lave-linge séchant"
       ],
-      "language": ""
+      "standardModels": [
+        "Lave-linge-sechant — Siemens Lave-linge séchant"
+      ],
+      "isStandard": true
     },
     {
       "id": 31,
       "title": "Électricité : un disjoncteur est baissé, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/q5vO2dY2KXQ",
       "youtubeId": "q5vO2dY2KXQ",
+      "language": "",
+      "is_active": true,
       "equipment": "Tableau électrique",
       "family": "Réseau & compteurs",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 32,
       "title": "Électricité : le disjoncteur principal ne remonte pas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/yG0lgUXUxEg",
       "youtubeId": "yG0lgUXUxEg",
+      "language": "",
+      "is_active": true,
       "equipment": "Tableau électrique",
       "family": "Réseau & compteurs",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 33,
       "title": "Électricité : plus d'électricité et aucun disjoncteur baissé, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/g0rN_jUhy08",
       "youtubeId": "g0rN_jUhy08",
+      "language": "",
+      "is_active": true,
       "equipment": "Tableau électrique",
       "family": "Réseau & compteurs",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 34,
       "title": "Wifi : ne fonctionne pas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/PIAxDPWfkws",
       "youtubeId": "PIAxDPWfkws",
+      "language": "",
+      "is_active": true,
       "equipment": "Box internet",
       "family": "Réseau & compteurs",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 35,
       "title": "Four micro-ondes : changer l'heure",
       "kind": "Utilisation",
+      "audience": "Interne",
       "url": "https://youtu.be/3e8SnYL9zf0",
       "youtubeId": "3e8SnYL9zf0",
+      "language": "",
+      "is_active": true,
       "equipment": "Four micro-ondes",
       "family": "Électroménager",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 36,
       "title": "Four micro-ondes : déverrouiller (logo clé)",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/1Ljw9YZOvy0",
       "youtubeId": "1Ljw9YZOvy0",
+      "language": "",
+      "is_active": true,
       "equipment": "Four micro-ondes",
       "family": "Électroménager",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 37,
       "title": "Lave-vaisselle : ne fonctionne pas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/LY8PbcT7YGQ",
       "youtubeId": "LY8PbcT7YGQ",
+      "language": "",
+      "is_active": true,
       "equipment": "Lave-vaisselle",
       "family": "Électroménager",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 38,
       "title": "Réfrigérateur : ne fonctionne pas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/Svx3HuJxtTw",
       "youtubeId": "Svx3HuJxtTw",
+      "language": "",
+      "is_active": true,
       "equipment": "Réfrigérateur",
       "family": "Électroménager",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 39,
       "title": "TV Samsung : changer les piles de la télécommande",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/gbWIYGxeWYc",
       "youtubeId": "gbWIYGxeWYc",
+      "language": "",
+      "is_active": true,
       "equipment": "Télévision",
       "family": "Multimédia",
       "models": [
@@ -436,14 +594,20 @@ dialog{padding:0;border:0;border-radius:16px;width:min(900px,94vw);max-height:94
         "Télévision — Samsung Smart TV Connectée",
         "Télévision — Samsung Smart TV Connectée"
       ],
-      "language": ""
+      "standardModels": [
+        "Télévision — Samsung Smart TV Connectée"
+      ],
+      "isStandard": true
     },
     {
       "id": 40,
       "title": "TV Samsung : n'est plus connectée à internet, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://www.youtube.com/watch?v=7zl8j0di5hU",
       "youtubeId": "7zl8j0di5hU",
+      "language": "",
+      "is_active": true,
       "equipment": "Télévision",
       "family": "Multimédia",
       "models": [
@@ -451,243 +615,328 @@ dialog{padding:0;border:0;border-radius:16px;width:min(900px,94vw);max-height:94
         "Télévision — Samsung Smart TV Connectée",
         "Télévision — Samsung Smart TV Connectée"
       ],
-      "language": ""
+      "standardModels": [
+        "Télévision — Samsung Smart TV Connectée"
+      ],
+      "isStandard": true
     },
     {
       "id": 41,
       "title": "Odeur : problème d'odeur, que faire ?",
       "kind": "Dépannage",
+      "audience": "Client",
       "url": "https://www.youtube.com/watch?v=SkXYFBJ8VCY",
       "youtubeId": "SkXYFBJ8VCY",
+      "language": "",
+      "is_active": true,
       "equipment": "Autres sujets",
       "family": "",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 42,
       "title": "Eau chaude : plus d'eau chaude, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/0tzEgeJXuEY",
       "youtubeId": "0tzEgeJXuEY",
+      "language": "",
+      "is_active": true,
       "equipment": "Ballon d'eau chaude",
       "family": "Eau chaude & plomberie",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 43,
       "title": "Colonne de douche : explication et fonctionnalités",
       "kind": "Utilisation",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/vapjW18ka58",
       "youtubeId": "vapjW18ka58",
+      "language": "",
+      "is_active": true,
       "equipment": "Douche",
       "family": "Sanitaire",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 45,
       "title": "Charnière de placard : comment la reclipser",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/vE2LAp4rVfE",
       "youtubeId": "vE2LAp4rVfE",
+      "language": "",
+      "is_active": true,
       "equipment": "Placard client",
       "family": "Mobilier & rangement",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 46,
       "title": "Plaque de cuisson : ne fonctionne pas (logo clé), que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/fOVvJKCYxr4",
       "youtubeId": "fOVvJKCYxr4",
+      "language": "",
+      "is_active": true,
       "equipment": "Plaque de cuisson",
       "family": "Électroménager",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 47,
       "title": "Master Lock : ne s'ouvre pas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/IIfikjQBCtk",
       "youtubeId": "IIfikjQBCtk",
+      "language": "",
+      "is_active": true,
       "equipment": "Boîte à clés Masterlock",
       "family": "Accès & sécurité",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 48,
       "title": "Master Lock : ne se ferme pas, que faire ?",
       "kind": "Dépannage",
+      "audience": "Interne",
       "url": "https://youtube.com/shorts/iOQG4iOJwjc",
       "youtubeId": "iOQG4iOJwjc",
+      "language": "",
+      "is_active": true,
       "equipment": "Boîte à clés Masterlock",
       "family": "Accès & sécurité",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 51,
       "title": "Machine à café Magimix : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://www.youtube.com/shorts/F-ErpXsd3ok",
       "youtubeId": "F-ErpXsd3ok",
+      "language": "",
+      "is_active": true,
       "equipment": "Machine à café",
       "family": "Électroménager",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 52,
       "title": "Bouilloire Bosch : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://www.youtube.com/watch?v=y5yZUAJeMG0",
       "youtubeId": "y5yZUAJeMG0",
+      "language": "",
+      "is_active": true,
       "equipment": "Bouilloire",
       "family": "Électroménager",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 53,
       "title": "Livebox 6 : wifi en panne, redémarrer la box",
       "kind": "Dépannage",
+      "audience": "Client",
       "url": "https://www.youtube.com/watch?v=TCQQDdY-HIc",
       "youtubeId": "TCQQDdY-HIc",
+      "language": "",
+      "is_active": true,
       "equipment": "Box internet",
       "family": "Réseau & compteurs",
       "models": [
         "Box internet — Orange Livebox 6"
       ],
-      "language": ""
+      "standardModels": [
+        "Box internet — Orange Livebox 6"
+      ],
+      "isStandard": true
     },
     {
       "id": 54,
       "title": "Livebox 4 : redémarrer la box",
       "kind": "Dépannage",
+      "audience": "Client",
       "url": "https://www.youtube.com/watch?v=fhjnw9VI_Og",
       "youtubeId": "fhjnw9VI_Og",
+      "language": "",
+      "is_active": true,
       "equipment": "Box internet",
       "family": "Réseau & compteurs",
       "models": [
         "Box internet — Orange Livebox Pro (V4)"
       ],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 55,
       "title": "Four micro-ondes multifonction Samsung : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://www.youtube.com/watch?v=EXE1QJ4263Q",
       "youtubeId": "EXE1QJ4263Q",
+      "language": "",
+      "is_active": true,
       "equipment": "Four micro-ondes",
       "family": "Électroménager",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 56,
       "title": "Four micro-ondes : tutoriel d'utilisation (modèle D)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/6oiRmBL5JQA",
       "youtubeId": "6oiRmBL5JQA",
+      "language": "",
+      "is_active": true,
       "equipment": "Four micro-ondes",
       "family": "Électroménager",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 57,
       "title": "Sèche-serviettes : tutoriel d'utilisation (modèle D)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtube.com/shorts/_439NQtcuBQ",
       "youtubeId": "_439NQtcuBQ",
+      "language": "",
+      "is_active": true,
       "equipment": "Sèche-serviettes",
       "family": "Sanitaire",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 58,
       "title": "Climatisation murale : tutoriel d'utilisation (modèle A)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/FGKZuwjvx3A",
       "youtubeId": "FGKZuwjvx3A",
+      "language": "",
+      "is_active": true,
       "equipment": "Climatisation murale",
       "family": "Chauffage & climatisation",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 59,
       "title": "Radiateur électrique : tutoriel d'utilisation (modèle C)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://youtu.be/v2GbnBcEHLk",
       "youtubeId": "v2GbnBcEHLk",
+      "language": "",
+      "is_active": true,
       "equipment": "Radiateur",
       "family": "Chauffage & climatisation",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 60,
       "title": "Réfrigérateur BSH (Bosch / Siemens) : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://www.youtube.com/watch?v=632lgL_cLkU",
       "youtubeId": "632lgL_cLkU",
+      "language": "",
+      "is_active": true,
       "equipment": "Réfrigérateur",
       "family": "Électroménager",
       "models": [
         "Réfrigérateur — BSH (Bosch / Siemens)"
       ],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 61,
       "title": "Sèche-serviettes : tutoriel d'utilisation (modèle C)",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://www.youtube.com/watch?v=b00jRQKV2N4",
       "youtubeId": "b00jRQKV2N4",
+      "language": "",
+      "is_active": true,
       "equipment": "Sèche-serviettes",
       "family": "Sanitaire",
       "models": [
         "Sèche-serviettes — (générique)"
       ],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 63,
       "title": "Climatisation Tecknopoint : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://www.youtube.com/watch?v=1KVpba6JIEY",
       "youtubeId": "1KVpba6JIEY",
+      "language": "",
+      "is_active": true,
       "equipment": "Climatisation murale",
       "family": "Chauffage & climatisation",
       "models": [
         "Climatisation murale — Tecknopoint TKP Idra 4"
       ],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     },
     {
       "id": 64,
       "title": "Ventilateur plafonnier : tutoriel d'utilisation",
       "kind": "Utilisation",
+      "audience": "Client",
       "url": "https://www.youtube.com/watch?v=KmUeKfJO3b4&feature=youtu.be",
       "youtubeId": "KmUeKfJO3b4",
+      "language": "",
+      "is_active": true,
       "equipment": "Ventilateur",
       "family": "Chauffage & climatisation",
       "models": [],
-      "language": ""
+      "standardModels": [],
+      "isStandard": false
     }
   ]
 }</script>
 <script>
-'use strict';
-const catalog=JSON.parse(document.getElementById('video-data').textContent),videos=catalog.videos;
+ 'use strict';
+const catalog=JSON.parse(document.getElementById('video-data').textContent),videos=catalog.videos.filter(v=>v.is_active===true);
 const $=id=>document.getElementById(id);
 const norm=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -712,63 +961,82 @@ function groupOf(v){
 const names={'Lave-linge-sechant':'Lave-linge / séchant','Box internet':'Box / wifi','Autres sujets':'Odeurs','Placard client':'Placard','Boîte à clés Masterlock':'Boîte à clés','Ballon d\'eau chaude':'Eau chaude'};
 const name=e=>names[e]||e;
 const aliases={'Réfrigérateur':'frigo frigidaire froid','Lave-linge-sechant':'machine a laver linge seche sechant lessive','Four micro-ondes':'four micro onde microonde','Box internet':'wifi wi fi internet livebox connexion','Tableau électrique':'electricite courant panne disjoncteur','Boîte à clés Masterlock':'cle boite master lock','Sèche-serviettes':'seche serviette chauffage salle de bain','Ballon d\'eau chaude':'douche chauffe eau ballon','Autres sujets':'odeur mauvaises odeurs','Télévision':'tv tele telecommande'};
+
 const searchIndex=new Map(videos.map(v=>[v.id,norm([v.title,v.equipment,...v.models,aliases[v.equipment]||''].join(' '))]));
-let selectedGroup='',selectedEquipment='',selectedKind='',view='home',toastTimer,returnFocus;
+let audience=new URL(location.href).searchParams.get('audience')==='client'?'client':'internal';
+let selectedGroup='',selectedKind='',view='home',toastTimer,returnFocus;
+const isAllowed=v=>v.audience===(audience==='client'?'Client':'Interne');
+const compare=(a,b)=>Number(b.isStandard)-Number(a.isStandard)||a.id-b.id;
 function matchesQuery(v){return norm($('search').value).split(' ').filter(Boolean).every(w=>searchIndex.get(v.id).includes(w));}
-function baseVideos(){return videos.filter(v=>(!selectedGroup||groupOf(v)===selectedGroup)&&(!selectedEquipment||v.equipment===selectedEquipment)&&matchesQuery(v));}
-function renderHome(){
- $('families').innerHTML=groups.map(g=>'<button class="family" data-group="'+g.id+'"><span class="icon">'+svg(g.icon)+'</span><strong>'+g.label+'</strong><small>'+g.hint+'</small><span class="count">'+videos.filter(v=>groupOf(v)===g.id).length+' vidéos →</span></button>').join('');
+function baseVideos(){return videos.filter(v=>isAllowed(v)&&(!selectedGroup||groupOf(v)===selectedGroup)&&matchesQuery(v)&& (view!=='standards'||v.isStandard));}
+function diverse(items,limit=6){
+const families=new Set(),equipment=new Set(),first=[],next=[],rest=[];
+for(const v of items){const family=groupOf(v);if(!families.has(family)){first.push(v);families.add(family);equipment.add(v.equipment);}else next.push(v);}
+for(const v of next){if(!equipment.has(v.equipment)){first.push(v);equipment.add(v.equipment);}else rest.push(v);}
+const selected=first.concat(rest).slice(0,limit);
+if(audience==='internal'&&selected.length===limit&&!selected.some(v=>v.audience==='Interne')){const internal=items.find(v=>v.audience==='Interne'&&!selected.some(s=>s.equipment===v.equipment));if(internal)selected[limit-1]=internal;}
+return selected;
 }
+function modelLabel(v){return [...new Set(v.models.map(m=>m.replace(/^.*? — /,'').replace('(générique)','Modèle non précisé')))].join(' · ');}
+function cards(items){return items.map((v,i)=>{
+const client=v.audience==='Client',title=name(v.equipment),detail=modelLabel(v);
+const action=v.title.includes(':')?v.title.slice(v.title.indexOf(':')+1).trim():v.title;
+return '<article class="card '+(v.isStandard?'standard-card':'')+'"><button class="video-main" data-watch="'+v.id+'" aria-label="Lire : '+esc(v.title)+' — '+(client?'Client':'Interne')+'"><div class="poster"><img src="https://i.ytimg.com/vi/'+encodeURIComponent(v.youtubeId)+'/hqdefault.jpg" alt="" loading="'+(i<2?'eager':'lazy')+'" decoding="async"><span class="play">'+svg('<path d="m9 5 10 7-10 7Z" fill="currentColor" stroke="none"/>')+'</span></div><div class="card-body"><div class="badge-row">'+(v.isStandard?'<span class="badge standard">Standard Merveil</span>':'')+'<span class="badge '+(client?'client':'internal')+'">'+(client?'Client':'Interne')+'</span></div><h3>'+esc(title)+'</h3>'+(detail?'<p class="model">'+esc(detail)+'</p>':'')+'<p class="video-action">'+esc(action)+'</p></div></button><div class="card-footer"><span class="kind-label">'+esc(v.kind)+'</span><button class="share" data-share="'+v.id+'" aria-label="Copier le lien '+(client?'client':'interne')+' : '+esc(v.title)+'">Copier le lien '+(client?'client':'interne')+'</button></div></article>';
+}).join('');}
 function render(){
- const searching=!!$('search').value.trim(),home=view==='home'&&!searching;
- document.body.classList.toggle('browsing',!home);$('home').hidden=!home;$('browse').hidden=home;$('clear-search').hidden=!$('search').value;
- $('nav-home').classList.toggle('active',home||!!selectedGroup);
- $('nav-all').classList.toggle('active',!home&&!selectedGroup&&!searching);
- $('nav-search').classList.toggle('active',searching);
- if(home){$('grid').replaceChildren();return;}
- const group=groups.find(g=>g.id===selectedGroup);
- $('browse-title').textContent=searching?'Résultats de recherche':group?.label||'Toutes les vidéos';
- $('equipment-section').hidden=!selectedGroup||!!selectedEquipment||searching;
- const equipment=[...new Set(videos.filter(v=>groupOf(v)===selectedGroup).map(v=>v.equipment))].sort((a,b)=>name(a).localeCompare(name(b),'fr'));
- $('equipments').innerHTML=equipment.map(e=>'<button class="equipment-button" data-equipment="'+esc(e)+'"><span>'+esc(name(e))+'</span><small>'+videos.filter(v=>v.equipment===e).length+' →</small></button>').join('');
- $('selection-title').textContent=selectedEquipment?name(selectedEquipment):searching?'Vidéos trouvées':selectedGroup?'Les vidéos de cette catégorie':'Les 53 vidéos';
- $('selection-note').textContent=selectedEquipment?'Vérifiez le modèle avant de suivre la vidéo.':'Choisissez une vidéo ou précisez votre besoin.';
- $('change-equipment').hidden=!selectedEquipment;
- const base=baseVideos(),filtered=base.filter(v=>!selectedKind||v.kind===selectedKind);
- document.querySelectorAll('[data-kind]').forEach(b=>{const active=b.dataset.kind===selectedKind;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));const n=base.filter(v=>!b.dataset.kind||v.kind===b.dataset.kind).length;b.querySelector('small').textContent=n+' vidéo'+(n===1?'':'s');});
- $('results').textContent=filtered.length+' vidéo'+(filtered.length===1?'':'s');
- $('grid').innerHTML=filtered.map(v=>'<article class="card"><button class="video-main" data-watch="'+v.id+'" aria-label="Lire : '+esc(v.title)+'"><div class="poster"><img src="https://i.ytimg.com/vi/'+encodeURIComponent(v.youtubeId)+'/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M4 2 18 10 4 18Z"/></svg>Voir la vidéo</span></div><div class="card-body"><span class="badge '+(v.kind==='Dépannage'?'repair':'')+'">'+(v.kind==='Dépannage'?'Un problème ?':'Comment l’utiliser')+'</span><h3>'+esc(v.title)+'</h3><p class="model">'+esc(v.models.length?v.models.map(m=>m.replace(/^.*? — /,'').replace('(générique)','Modèle non précisé')).join(' · '):name(v.equipment))+'</p></div></button><div class="card-footer"><button class="share" data-share="'+v.id+'" aria-label="Copier le lien : '+esc(v.title)+'">Copier le lien</button></div></article>').join('');
- $('empty').hidden=filtered.length>0;
+const searching=!!$('search').value.trim(),home=view==='home'&&!searching&&!selectedGroup&&!selectedKind;
+const filtered=baseVideos().filter(v=>!selectedKind||v.kind===selectedKind).sort(compare);
+const standard=filtered.filter(v=>v.isStandard),others=filtered.filter(v=>!v.isStandard);
+const shown=home?diverse(standard):filtered;
+$('grid').innerHTML=cards(shown);$('other-grid').innerHTML=home?cards(diverse(others)):'';
+$('other-section').hidden=!home||!others.length;$('empty').hidden=shown.length>0;
+$('clear-search').hidden=!$('search').value;$('reset-filters').hidden=home;
+$('audience-note').textContent=audience==='client'?'Uniquement les vidéos destinées au client.':'Uniquement les vidéos internes.';
+$('families').innerHTML=groups.map(g=>'<button class="category-chip '+(selectedGroup===g.id?'active':'')+'" data-group="'+g.id+'" aria-pressed="'+(selectedGroup===g.id)+'">'+(g.icon?svg(g.icon):'')+esc(g.label)+'</button>').join('');
+document.querySelectorAll('[data-audience]').forEach(b=>{const active=audience===b.dataset.audience;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
+document.querySelectorAll('[data-kind]').forEach(b=>{const active=selectedKind===b.dataset.kind;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
+$('section-eyebrow').textContent=home?'LA SÉLECTION MERVEIL':view==='standards'?'LES MODÈLES DE RÉFÉRENCE':'LA VIDÉOTHÈQUE';
+$('section-title').textContent=home?'Les standards Merveil':searching?'Résultats de recherche':view==='standards'?'Tous les standards Merveil':groups.find(g=>g.id===selectedGroup)?.label||'Toutes les vidéos';
+$('section-hint').textContent=home?'Les vidéos des modèles retenus pour nos appartements.':'Les standards en premier. Vérifiez le modèle avant de suivre la vidéo.';
+$('results').textContent=home?shown.length+' vidéos à découvrir · '+standard.length+' vidéos de standards disponibles':filtered.length+' vidéo'+(filtered.length===1?'':'s')+(standard.length?' · '+standard.length+' associée'+(standard.length===1?'':'s')+' aux standards':'');
+
+$('nav-home').classList.toggle('active',home);$('nav-search').classList.toggle('active',searching);
+$('catalog-date').textContent=videos.length+' vidéos · Catalogue mis à jour le '+new Intl.DateTimeFormat('fr-FR',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(catalog.updated+'T00:00:00Z'));
 }
-function moveToContent(){window.scrollTo({top:0,behavior:'instant'});$('browse-title').focus({preventScroll:true});}
-function reset(to='home'){view=to;selectedGroup='';selectedEquipment='';selectedKind='';$('search').value='';render();window.scrollTo({top:0,behavior:'instant'});}
+function reset(to='home'){view=to;selectedGroup='';selectedKind='';$('search').value='';render();}
+function moveToContent(){ $('section-title').focus({preventScroll:true});$('section-title').scrollIntoView({block:'start',behavior:'instant'});}
+function syncMode(){const u=new URL(location.href);if(audience==='client')u.searchParams.set('audience','client');else u.searchParams.delete('audience');history.replaceState(null,'',u);}
 function openVideo(id,trigger){
- const v=videos.find(v=>v.id===Number(id));if(!v)return;
- if(trigger)returnFocus=trigger;
- $('video-title').textContent=v.title;$('video-detail').textContent=[v.kind,name(v.equipment),...v.models,v.language].filter(Boolean).join(' · ');$('youtube-link').href=v.url;
- const frame=document.createElement('iframe');frame.src='https://www.youtube-nocookie.com/embed/'+encodeURIComponent(v.youtubeId)+'?rel=0&autoplay=1';frame.title=v.title;frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';$('player').replaceChildren(frame);
- if(!$('video-dialog').open)$('video-dialog').showModal();
- history.replaceState(null,'','#video-'+v.id);
+const v=videos.find(v=>v.id===Number(id));if(!v)return;
+if(!isAllowed(v)){showToast('Cette vidéo n’est pas disponible dans ce mode.');return;}
+returnFocus=trigger||$('section-title');
+$('video-title').textContent=v.title;
+$('video-detail').textContent=[v.audience==='Client'?'Pour le client':'Interne',v.isStandard?'Standard Merveil':'',v.kind,name(v.equipment),modelLabel(v),v.language].filter(Boolean).join(' · ');
+$('youtube-link').href=v.url;
+const frame=document.createElement('iframe');frame.src='https://www.youtube-nocookie.com/embed/'+encodeURIComponent(v.youtubeId)+'?rel=0&autoplay=1';frame.title=v.title;frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';$('player').replaceChildren(frame);
+if(!$('video-dialog').open)$('video-dialog').showModal();
+const u=new URL(location.href);u.hash='video-'+v.id;history.replaceState(null,'',u);
 }
-function showToast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,3000);}
+function showToast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,4000);}
 document.addEventListener('click',async e=>{
- const home=e.target.closest('[data-home]');if(home){reset();$('home-title').setAttribute('tabindex','-1');$('home-title').focus({preventScroll:true});}
- if(e.target.closest('[data-all]')){reset('all');moveToContent();}
- const group=e.target.closest('[data-group]');if(group){view='browse';selectedGroup=group.dataset.group;const choices=[...new Set(videos.filter(v=>groupOf(v)===selectedGroup).map(v=>v.equipment))];selectedEquipment=choices.length===1?choices[0]:'';selectedKind='';$('search').value='';render();moveToContent();}
- const equipment=e.target.closest('[data-equipment]');if(equipment){selectedEquipment=equipment.dataset.equipment;selectedKind='';render();moveToContent();}
- const kind=e.target.closest('[data-kind]');if(kind){selectedKind=kind.dataset.kind;render();}
- const watch=e.target.closest('[data-watch]');if(watch)openVideo(watch.dataset.watch,watch);
- const share=e.target.closest('[data-share]');if(share){const url=new URL(location.href);url.hash='video-'+share.dataset.share;try{await navigator.clipboard.writeText(url.href);showToast('Lien de la vidéo copié');}catch{showToast('Ouvrez la vidéo pour copier son adresse.');}}
+if(e.target.closest('[data-home]')){e.preventDefault();reset();window.scrollTo({top:0,behavior:'instant'});$('search').focus({preventScroll:true});}
+if(e.target.closest('[data-reset]')){reset();moveToContent();}
+const mode=e.target.closest('[data-audience]');if(mode){audience=mode.dataset.audience;if($('video-dialog').open)$('video-dialog').close();syncMode();render();}
+const group=e.target.closest('[data-group]');if(group){selectedGroup=group.dataset.group;render();}
+const kind=e.target.closest('[data-kind]');if(kind){selectedKind=kind.dataset.kind;render();}
+const watch=e.target.closest('[data-watch]');if(watch)openVideo(watch.dataset.watch,watch);
+const share=e.target.closest('[data-share]');if(share){const v=videos.find(v=>v.id===Number(share.dataset.share));const u=new URL(location.href);u.searchParams.set('audience',v.audience==='Client'?'client':'internal');u.hash='video-'+v.id;try{await navigator.clipboard.writeText(u.href);showToast('Lien '+(v.audience==='Client'?'client':'interne')+' copié');}catch{showToast('Copie indisponible. Ouvrez la vidéo pour copier son adresse.');}}
 });
-$('search-form').addEventListener('submit',e=>{e.preventDefault();$('search').blur();});
-$('search').addEventListener('input',()=>{selectedGroup='';selectedEquipment='';selectedKind='';view=$('search').value.trim()?'search':'home';render();});
-$('clear-search').addEventListener('click',()=>{reset();$('search').focus();});
+
+$('reset-filters').addEventListener('click',()=>reset());
+$('search-form').addEventListener('submit',e=>{e.preventDefault();$('search').blur();moveToContent();});
+$('search').addEventListener('input',()=>render());
+$('clear-search').addEventListener('click',()=>{$('search').value='';render();$('search').focus();});
 $('nav-search').addEventListener('click',()=>{$('search').focus();window.scrollTo({top:0,behavior:'instant'});});
-$('change-equipment').addEventListener('click',()=>{selectedEquipment='';selectedKind='';render();moveToContent();});
 $('close-dialog').addEventListener('click',()=>$('video-dialog').close());
 $('video-dialog').addEventListener('click',e=>{if(e.target===$('video-dialog')){const r=$('video-dialog').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('video-dialog').close();}});
-$('video-dialog').addEventListener('close',()=>{$('player').replaceChildren();history.replaceState(null,'',location.pathname+location.search);if(returnFocus?.isConnected)returnFocus.focus();});
+$('video-dialog').addEventListener('close',()=>{$('player').replaceChildren();const u=new URL(location.href);u.hash='';history.replaceState(null,'',u);if(returnFocus?.isConnected)returnFocus.focus();});
 function openFromHash(){const m=location.hash.match(/^#video-(\d+)$/);if(m)openVideo(m[1]);}
-window.addEventListener('hashchange',openFromHash);renderHome();render();openFromHash();
+window.addEventListener('hashchange',openFromHash);render();openFromHash();
 </script>
 </body></html>
