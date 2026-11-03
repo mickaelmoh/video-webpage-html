@@ -1,9 +1,1 @@
-SELECT v.id, v.title, v.kind, v.audience, v.url, v.youtube_id AS youtubeId,
-       v.language, v.is_active, t.label_fr AS equipment, t.family, v.element_models
-FROM T3_D_Videos v
-LEFT JOIN T3_A_ElementTypes t ON v.element_type = t.id
-WHERE v.is_active = 1
-  AND v.status = 'Publiée'
-  AND v.url <> ''
-  AND v.kind IN ('Utilisation', 'Dépannage')
-ORDER BY v.id
+SELECT 'video' AS entity, id, title AS a, url AS b, youtube_id AS c, kind AS d, element_type AS e, element_models AS f, language AS g, audience AS h, is_active AS i, status AS j FROM T3_D_Videos UNION ALL SELECT 'type', id, label_fr, family, '', '', 0, '', '', '', 0, '' FROM T3_A_ElementTypes UNION ALL SELECT 'model', id, display_name, '', '', '', element_type, '', '', '', is_standard, '' FROM T3_B_ElementModels
