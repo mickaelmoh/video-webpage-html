@@ -8,6 +8,13 @@ Export du 30 octobre 2026 depuis `T3_D_Videos` du Référentiel Merveil. 53 vid�
 
 Le fichier HTML contient uniquement titre, catégorie, équipement, modèle, langue renseignée et lien vidéo. Aucun code d’accès, contact, note interne ni identifiant de connexion Grist. Les champs non renseignés restent vides. Les vidéos sont lues sur YouTube et ne sont pas copiées dans le dépôt.
 
+## Deux pages (13 novembre 2026)
+
+- `index.html` — page client et équipes (how-to.merveil-paris.com) : vidéos de genre Utilisation, Dépannage, Entretien, Inspection et Ménage. Dépannage = geste faisable par un non-technicien.
+- `technique.html` — page technicien (how-to.merveil-paris.com/technique.html) : vidéos de genre Technique (réparation, remplacement de pièce, réglage maître, configuration). Elle n'est pas liée depuis la page client ; elle reste publique pour qui a le lien, comme les vidéos YouTube elles-mêmes.
+
+Les deux pages sont remplies chaque nuit par le script Apps Script « Synchronisation vidéothèque Merveil » (registre des scripts du Référentiel Merveil), qui remplace le bloc `video-data` de chaque fichier et ne republie une page que si son contenu a changé. Le genre Formation n'existe plus dans le Référentiel (remplacé par Technique, Ménage et Inspection) : la description ci-dessus de l'export du 30 octobre est historique.
+
 ## Fonctionnement
 
 `index.html` est autonome, sans installation ni compilation. Accueil mobile avec six catégories, sous-catégories par équipement, boutons « Comment l’utiliser » / « Un problème ? », recherche globale insensible aux accents et avec synonymes (frigo, machine à laver, wifi…), une vidéo par ligne sur téléphone et navigation fixe en bas. Lecteur intégré, lien YouTube alternatif et lien direct partageable par vidéo (`#video-22`), navigation clavier et fermeture par Échap.
